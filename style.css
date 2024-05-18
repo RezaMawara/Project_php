@@ -124,6 +124,37 @@ section {
     padding-bottom: 20px;
 }
 
+/* php */
+#bitwizards {
+    border-collapse: collapse;
+    width:90%;
+    background-color: #1173ce;
+    margin-right: auto;
+    margin-right: auto;
+}
+
+#bitwizards td, #bitwizards th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#bitwizards tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#bitwizards tr:hover {
+    background-color: #ddd;
+}
+
+#bitwizards th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1173ce;
+    color:white;
+}
+
+
 .contact-form {
     max-width: 400px;
     margin: 0 auto;

@@ -1,3 +1,10 @@
+<?php
+$db = mysqli_connect("localhost", "root", "", "portofolio");
+
+$data = mysqli_query($db, "SELECT * FROM bitwizards");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +84,26 @@
             Fenomena ini menjadikan musik sebagai alat yang ampuh untuk mengatur suasana hati kita sehari-hari.</p>
     </div>
 </section>
+
+<table id="bitwizards">
+    <tr>
+        <th>no</th>
+        <th>name</th>
+        <th>birthday</th>
+    </tr>
+
+<?php while ($row = mysqli_fetch_array($data)) : ?>
+
+    <tr>
+        <td><?= $row["no"]; ?></td>
+        <td><?= $row["name"]; ?></td>
+        <td><?= $row["birthday"]; ?></td>
+    </tr>
+
+    <?php endwhile;; ?>
+</table>
+
+
 
 <section id="contact">
     <h2>Contact</h2>
